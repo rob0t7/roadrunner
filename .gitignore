@@ -5,10 +5,5 @@ bin
 develop-eggs
 lib
 .installed.cfg
-<<<<<<< HEAD:.gitignore
 parts/
 coverage/
-=======
-parts
-src
->>>>>>> 9a8a9c02f3c32a5a3dd97a4bc8ca0b216a72066c:.gitignore

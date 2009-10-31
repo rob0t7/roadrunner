@@ -109,7 +109,6 @@ class RoadrunnnerRecipeTests(MockerTestCase):
 
         unmock_recipe()
 
-<<<<<<< HEAD:roadrunner/tests.py
     def test_update(self):
         mock_recipe()
         buildout = {'buildout': {'directory': '/fake'}, 'instance': None}
@@ -138,21 +137,6 @@ class RoadrunnnerRecipeTests(MockerTestCase):
         options = {
             'eggs': 'egg1\negg2'
         }
-=======
-    # def test_update(self):
-    #     mock_recipe()
-    #     buildout = {'buildout': {'directory': '/fake'}, 'instance': None}
-    #     options = {'packages-under-test': 'package.*'}
-    #     recipe = RoadrunnerPloneRecipe(buildout, 'roadrunner', options)
-    #     recipe.install = self.mocker.mock()
-    #     
-    #     #x``self.mocker.replace(recipe.install)
-    #     self.mocker.expect(self.install()).result()
-    #     self.mocker.replay()
-    #     
-    #     self.assertRquals(recipe.update(), 0)
-    #     unmock_recipe()
->>>>>>> 9a8a9c02f3c32a5a3dd97a4bc8ca0b216a72066c:roadrunner/tests.py
         
         # mock out parts directory existing and shutil call after it.
         # not important since the algorithm is just delete the directory if it exists
