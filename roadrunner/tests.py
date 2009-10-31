@@ -95,11 +95,10 @@ class RoadrunnnerRecipeTests(MockerTestCase):
         recipe = RoadrunnerPloneRecipe(buildout, 'roadrunner', options)
         recipe.install = self.mocker.mock()
         
-        #self.mocker.replace(recipe.install)
-        self.mocker.expect(self.install()).result()
+        self.expect(recipe.install())
         self.mocker.replay()
         
-        self.assertRquals(recipe.update(), 0)
+        self.assertEquals(recipe.update(), None)
         unmock_recipe()
         
 original_bases = None
